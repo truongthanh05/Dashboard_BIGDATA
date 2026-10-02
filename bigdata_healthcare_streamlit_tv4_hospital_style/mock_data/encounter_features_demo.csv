@@ -1,0 +1,361 @@
+﻿encounter_id,patient_id,age,gender,race,ethnicity,encounter_class,payer,condition,total_claim_cost
+E00001,P0016,26,M,asian,nonhispanic,inpatient,UnitedHealthcare,Anemia,15115.64
+E00002,P0063,89,F,asian,nonhispanic,ambulatory,Medicare,Acute bronchitis,3812.93
+E00003,P0087,40,F,white,nonhispanic,inpatient,Aetna,Migraine,10575.83
+E00004,P0059,69,M,white,nonhispanic,emergency,UnitedHealthcare,Chronic kidney disease,8284.06
+E00005,P0064,64,F,white,nonhispanic,outpatient,Aetna,Asthma,2996.73
+E00006,P0105,31,M,white,hispanic,inpatient,Humana,Asthma,22736.19
+E00007,P0109,72,F,black,hispanic,wellness,NO_INSURANCE,Chronic kidney disease,2031.48
+E00008,P0052,28,F,white,nonhispanic,ambulatory,Medicare,Chronic congestive heart failure,4948.29
+E00009,P0060,7,F,white,hispanic,wellness,Aetna,Anemia,1262.07
+E00010,P0055,46,F,asian,nonhispanic,inpatient,NO_INSURANCE,Acute bronchitis,15099.7
+E00011,P0118,49,M,white,nonhispanic,wellness,Medicare,Diabetes,515.19
+E00012,P0046,49,M,white,nonhispanic,ambulatory,UnitedHealthcare,Chronic kidney disease,2970.3
+E00013,P0089,39,M,asian,nonhispanic,inpatient,NO_INSURANCE,Viral sinusitis,12866.89
+E00014,P0026,48,F,white,nonhispanic,ambulatory,NO_INSURANCE,Hypertension,1152.06
+E00015,P0004,73,F,white,nonhispanic,outpatient,UnitedHealthcare,Migraine,2992.77
+E00016,P0027,53,F,white,nonhispanic,wellness,Medicaid,Hyperlipidemia,1505.77
+E00017,P0023,75,M,asian,nonhispanic,outpatient,Medicaid,Viral sinusitis,1753.97
+E00018,P0018,56,M,white,nonhispanic,wellness,Medicaid,Diabetes,1462.53
+E00019,P0023,46,F,white,nonhispanic,ambulatory,UnitedHealthcare,Hypertension,1736.92
+E00020,P0013,74,M,asian,hispanic,ambulatory,NO_INSURANCE,Osteoarthritis,3177.37
+E00021,P0086,51,M,white,nonhispanic,outpatient,Aetna,Chronic kidney disease,2392.52
+E00022,P0094,53,M,white,nonhispanic,wellness,Humana,Acute bronchitis,655.11
+E00023,P0046,46,M,white,nonhispanic,wellness,Aetna,Diabetes,852.55
+E00024,P0053,35,F,other,nonhispanic,outpatient,Medicare,Hypertension,3312.96
+E00025,P0100,19,M,asian,nonhispanic,inpatient,Medicaid,Diabetes,5209.12
+E00026,P0111,57,F,white,nonhispanic,outpatient,Cigna Health,Migraine,3753.05
+E00027,P0038,43,M,other,nonhispanic,ambulatory,UnitedHealthcare,Hyperlipidemia,1949.12
+E00028,P0055,11,M,white,nonhispanic,outpatient,Medicaid,Hyperlipidemia,1890.16
+E00029,P0085,43,F,white,nonhispanic,inpatient,Medicaid,Viral sinusitis,3924.92
+E00030,P0012,22,M,black,nonhispanic,wellness,NO_INSURANCE,Acute bronchitis,967.23
+E00031,P0041,88,M,other,hispanic,outpatient,Humana,Osteoarthritis,5532.98
+E00032,P0030,63,F,white,hispanic,outpatient,Cigna Health,Diabetes,3884.43
+E00033,P0075,44,F,black,nonhispanic,ambulatory,NO_INSURANCE,Anemia,3963.88
+E00034,P0048,60,F,white,hispanic,ambulatory,NO_INSURANCE,Chronic kidney disease,5855.9
+E00035,P0049,1,M,white,nonhispanic,inpatient,Medicare,Hypertension,11970.61
+E00036,P0085,34,M,white,nonhispanic,ambulatory,UnitedHealthcare,Diabetes,875.23
+E00037,P0062,68,M,black,nonhispanic,urgentcare,Medicaid,Hypertension,1690.33
+E00038,P0108,41,F,white,nonhispanic,ambulatory,UnitedHealthcare,Diabetes,2336.5
+E00039,P0014,73,F,white,nonhispanic,ambulatory,Medicare,Diabetes,2702.31
+E00040,P0046,23,F,black,nonhispanic,inpatient,Medicare,Hyperlipidemia,21854.53
+E00041,P0056,29,F,white,hispanic,outpatient,Aetna,Hypertension,1262.45
+E00042,P0053,48,F,white,nonhispanic,ambulatory,UnitedHealthcare,Hyperlipidemia,2524.77
+E00043,P0035,61,M,black,nonhispanic,wellness,Cigna Health,Diabetes,824.49
+E00044,P0071,28,F,white,nonhispanic,wellness,Humana,Hyperlipidemia,1221.57
+E00045,P0043,69,M,white,nonhispanic,ambulatory,Medicaid,Asthma,1833.24
+E00046,P0061,57,F,white,nonhispanic,ambulatory,Medicaid,Hypertension,1477.58
+E00047,P0011,35,M,black,nonhispanic,inpatient,NO_INSURANCE,Hypertension,25119.68
+E00048,P0011,44,F,white,nonhispanic,urgentcare,UnitedHealthcare,Chronic kidney disease,2946.31
+E00049,P0094,33,F,asian,hispanic,wellness,Cigna Health,Hyperlipidemia,1037.71
+E00050,P0005,47,F,white,nonhispanic,ambulatory,Cigna Health,Asthma,3061.51
+E00051,P0094,36,M,white,hispanic,emergency,Humana,Anemia,6417.38
+E00052,P0062,58,M,white,nonhispanic,emergency,UnitedHealthcare,Osteoarthritis,6042.73
+E00053,P0072,57,F,other,hispanic,inpatient,UnitedHealthcare,Osteoarthritis,42264.4
+E00054,P0004,38,F,asian,nonhispanic,ambulatory,NO_INSURANCE,Hyperlipidemia,1330.81
+E00055,P0092,20,F,black,nonhispanic,outpatient,UnitedHealthcare,Acute bronchitis,2980.56
+E00056,P0020,51,M,white,nonhispanic,ambulatory,Humana,Chronic congestive heart failure,2444.5
+E00057,P0024,36,M,white,hispanic,outpatient,NO_INSURANCE,Acute bronchitis,3905.82
+E00058,P0012,14,F,white,nonhispanic,wellness,NO_INSURANCE,Hyperlipidemia,473.38
+E00059,P0046,19,F,asian,nonhispanic,ambulatory,UnitedHealthcare,Hypertension,2189.42
+E00060,P0085,31,F,asian,nonhispanic,ambulatory,NO_INSURANCE,Hypertension,1714.48
+E00061,P0040,32,F,white,nonhispanic,ambulatory,Aetna,Anemia,2928.24
+E00062,P0083,31,F,asian,nonhispanic,ambulatory,NO_INSURANCE,Migraine,6510.48
+E00063,P0047,28,F,white,nonhispanic,inpatient,Cigna Health,Chronic congestive heart failure,112196.61
+E00064,P0076,63,M,white,nonhispanic,inpatient,Medicaid,Chronic kidney disease,16364.44
+E00065,P0106,60,M,white,nonhispanic,emergency,Medicare,Diabetes,3238.42
+E00066,P0103,9,F,white,nonhispanic,wellness,Medicare,Asthma,722.29
+E00067,P0111,47,M,white,hispanic,urgentcare,Aetna,Asthma,4449.52
+E00068,P0031,89,F,white,nonhispanic,urgentcare,Medicaid,Asthma,3467.33
+E00069,P0025,52,F,white,nonhispanic,outpatient,NO_INSURANCE,Hypertension,2548.42
+E00070,P0031,19,F,white,nonhispanic,ambulatory,Aetna,Hyperlipidemia,2546.97
+E00071,P0028,25,F,white,nonhispanic,outpatient,Medicare,Hypertension,4353.38
+E00072,P0034,34,M,asian,nonhispanic,wellness,Medicare,Migraine,1556.41
+E00073,P0005,20,F,white,nonhispanic,emergency,NO_INSURANCE,Asthma,2223.9
+E00074,P0080,84,M,black,nonhispanic,outpatient,NO_INSURANCE,Diabetes,4362.99
+E00075,P0031,41,F,white,nonhispanic,ambulatory,Medicare,Hyperlipidemia,1052.72
+E00076,P0080,49,M,other,nonhispanic,ambulatory,Medicaid,Hypertension,2571.01
+E00077,P0060,65,M,asian,nonhispanic,inpatient,UnitedHealthcare,Acute bronchitis,8096.54
+E00078,P0103,60,F,black,nonhispanic,ambulatory,Medicare,Asthma,2867.21
+E00079,P0086,24,F,asian,hispanic,ambulatory,Medicare,Chronic kidney disease,2280.14
+E00080,P0077,38,M,black,nonhispanic,ambulatory,NO_INSURANCE,Asthma,1264.44
+E00081,P0032,30,M,white,nonhispanic,wellness,Humana,Asthma,1093.93
+E00082,P0057,17,F,white,nonhispanic,inpatient,UnitedHealthcare,Hyperlipidemia,13509.95
+E00083,P0104,68,F,black,nonhispanic,outpatient,NO_INSURANCE,Hyperlipidemia,2426.1
+E00084,P0111,58,F,asian,nonhispanic,emergency,UnitedHealthcare,Hypertension,7117.85
+E00085,P0017,23,F,white,hispanic,ambulatory,NO_INSURANCE,Asthma,2032.02
+E00086,P0058,30,M,asian,nonhispanic,ambulatory,Aetna,Diabetes,2967.58
+E00087,P0017,28,F,white,hispanic,wellness,Aetna,Acute bronchitis,1487.31
+E00088,P0029,56,F,white,nonhispanic,emergency,UnitedHealthcare,Chronic congestive heart failure,13745.52
+E00089,P0050,14,M,black,nonhispanic,wellness,NO_INSURANCE,Hyperlipidemia,631.87
+E00090,P0105,15,M,black,nonhispanic,outpatient,Medicare,Diabetes,1828.78
+E00091,P0113,32,F,white,nonhispanic,ambulatory,NO_INSURANCE,Hypertension,3285.36
+E00092,P0083,32,M,white,nonhispanic,emergency,Aetna,Diabetes,8394.01
+E00093,P0031,63,M,white,nonhispanic,inpatient,NO_INSURANCE,Asthma,24521.65
+E00094,P0113,68,M,white,nonhispanic,outpatient,Cigna Health,Hypertension,2837.65
+E00095,P0068,49,M,white,nonhispanic,ambulatory,UnitedHealthcare,Hypertension,1017.57
+E00096,P0029,59,F,black,nonhispanic,inpatient,NO_INSURANCE,Hypertension,14363.46
+E00097,P0030,47,M,white,hispanic,wellness,UnitedHealthcare,Diabetes,762.5
+E00098,P0034,19,M,white,nonhispanic,urgentcare,UnitedHealthcare,Viral sinusitis,2367.96
+E00099,P0001,74,F,black,nonhispanic,urgentcare,NO_INSURANCE,Chronic kidney disease,3803.45
+E00100,P0078,34,F,white,nonhispanic,wellness,NO_INSURANCE,Osteoarthritis,958.6
+E00101,P0046,33,F,white,nonhispanic,emergency,Cigna Health,Hypertension,6994.17
+E00102,P0099,62,F,white,nonhispanic,outpatient,NO_INSURANCE,Hyperlipidemia,4267.12
+E00103,P0030,64,F,white,nonhispanic,ambulatory,UnitedHealthcare,Acute bronchitis,2471.47
+E00104,P0015,79,M,white,nonhispanic,inpatient,Medicare,Viral sinusitis,27463.24
+E00105,P0107,44,F,white,nonhispanic,outpatient,Humana,Hyperlipidemia,3106.47
+E00106,P0035,47,M,white,nonhispanic,wellness,Medicare,Chronic kidney disease,2469.65
+E00107,P0019,52,M,white,nonhispanic,emergency,Medicaid,Hyperlipidemia,8259.27
+E00108,P0098,31,F,white,hispanic,ambulatory,Cigna Health,Hypertension,1145.98
+E00109,P0047,40,M,white,nonhispanic,ambulatory,Medicaid,Diabetes,2741.16
+E00110,P0072,44,F,white,nonhispanic,emergency,Medicare,Anemia,3861.21
+E00111,P0083,34,M,white,hispanic,inpatient,NO_INSURANCE,Asthma,20732.01
+E00112,P0069,51,M,other,hispanic,inpatient,NO_INSURANCE,Hyperlipidemia,25819.59
+E00113,P0020,46,M,other,nonhispanic,ambulatory,NO_INSURANCE,Hypertension,1564.81
+E00114,P0107,70,M,other,nonhispanic,inpatient,Cigna Health,Diabetes,54563.4
+E00115,P0041,58,F,black,nonhispanic,ambulatory,UnitedHealthcare,Asthma,2032.31
+E00116,P0046,78,F,white,nonhispanic,inpatient,Cigna Health,Asthma,26167.06
+E00117,P0033,23,F,white,nonhispanic,wellness,Humana,Viral sinusitis,446.78
+E00118,P0061,39,M,white,nonhispanic,emergency,Medicare,Asthma,8113.49
+E00119,P0027,46,M,asian,nonhispanic,ambulatory,UnitedHealthcare,Viral sinusitis,1538.25
+E00120,P0105,64,M,white,nonhispanic,urgentcare,Medicaid,Diabetes,3485.24
+E00121,P0012,14,M,asian,hispanic,wellness,UnitedHealthcare,Chronic kidney disease,1583.21
+E00122,P0031,74,F,white,nonhispanic,wellness,Aetna,Chronic congestive heart failure,1329.48
+E00123,P0120,40,F,white,nonhispanic,ambulatory,NO_INSURANCE,Diabetes,3141.49
+E00124,P0107,69,F,black,nonhispanic,ambulatory,Aetna,Viral sinusitis,4298.13
+E00125,P0016,43,M,black,nonhispanic,wellness,NO_INSURANCE,Hypertension,1468.02
+E00126,P0037,32,M,black,nonhispanic,wellness,Cigna Health,Diabetes,1000.09
+E00127,P0099,32,F,white,nonhispanic,outpatient,NO_INSURANCE,Hypertension,2785.64
+E00128,P0072,43,M,white,nonhispanic,ambulatory,NO_INSURANCE,Anemia,1203.26
+E00129,P0007,52,M,other,nonhispanic,outpatient,Aetna,Hypertension,3175.63
+E00130,P0058,19,M,black,nonhispanic,ambulatory,NO_INSURANCE,Diabetes,2014.21
+E00131,P0054,70,M,other,nonhispanic,inpatient,Medicaid,Diabetes,12427.38
+E00132,P0040,44,M,white,nonhispanic,wellness,Medicare,Hypertension,700.74
+E00133,P0056,29,F,black,hispanic,ambulatory,NO_INSURANCE,Acute bronchitis,1794.77
+E00134,P0100,49,F,black,nonhispanic,outpatient,Aetna,Anemia,2718.61
+E00135,P0077,53,M,white,nonhispanic,ambulatory,Medicare,Hypertension,2028.59
+E00136,P0072,42,M,other,hispanic,ambulatory,NO_INSURANCE,Acute bronchitis,4418.01
+E00137,P0086,15,F,white,hispanic,ambulatory,Medicare,Anemia,2125.56
+E00138,P0067,72,M,white,nonhispanic,inpatient,UnitedHealthcare,Chronic congestive heart failure,22093.54
+E00139,P0059,85,M,white,hispanic,outpatient,NO_INSURANCE,Diabetes,6477.23
+E00140,P0074,20,M,asian,hispanic,inpatient,Aetna,Chronic congestive heart failure,16541.3
+E00141,P0091,46,M,black,nonhispanic,ambulatory,Cigna Health,Diabetes,2815.16
+E00142,P0113,36,F,white,nonhispanic,ambulatory,NO_INSURANCE,Hypertension,2179.16
+E00143,P0016,22,M,white,nonhispanic,ambulatory,Medicare,Viral sinusitis,2817.26
+E00144,P0094,55,M,white,nonhispanic,inpatient,NO_INSURANCE,Asthma,18389.33
+E00145,P0110,22,M,white,nonhispanic,ambulatory,Cigna Health,Asthma,1432.29
+E00146,P0075,32,F,white,nonhispanic,wellness,Medicaid,Hyperlipidemia,638.75
+E00147,P0042,63,F,white,nonhispanic,ambulatory,NO_INSURANCE,Chronic kidney disease,5467.09
+E00148,P0113,52,F,white,nonhispanic,ambulatory,Medicare,Acute bronchitis,3280.41
+E00149,P0054,37,F,white,nonhispanic,inpatient,Medicare,Hypertension,13768.25
+E00150,P0081,66,M,white,nonhispanic,ambulatory,Medicare,Hyperlipidemia,2181.62
+E00151,P0011,42,F,asian,nonhispanic,emergency,NO_INSURANCE,Viral sinusitis,3444.58
+E00152,P0028,89,F,asian,nonhispanic,urgentcare,Medicaid,Hypertension,8686.67
+E00153,P0023,80,F,white,nonhispanic,ambulatory,NO_INSURANCE,Viral sinusitis,2535.76
+E00154,P0047,36,F,white,nonhispanic,inpatient,Cigna Health,Diabetes,22827.61
+E00155,P0058,11,M,white,nonhispanic,wellness,Aetna,Hypertension,482.55
+E00156,P0036,66,F,white,nonhispanic,ambulatory,Cigna Health,Acute bronchitis,1518.14
+E00157,P0047,52,F,other,hispanic,ambulatory,Humana,Hyperlipidemia,1445.06
+E00158,P0078,47,M,white,hispanic,outpatient,Cigna Health,Chronic congestive heart failure,4323.61
+E00159,P0040,51,M,other,hispanic,outpatient,Cigna Health,Hypertension,1747.13
+E00160,P0062,42,F,white,nonhispanic,outpatient,Cigna Health,Acute bronchitis,2605.82
+E00161,P0114,49,M,black,hispanic,ambulatory,NO_INSURANCE,Acute bronchitis,1731.09
+E00162,P0079,72,F,white,nonhispanic,ambulatory,Aetna,Hypertension,2647.2
+E00163,P0023,50,M,other,nonhispanic,emergency,Medicare,Chronic congestive heart failure,8140.14
+E00164,P0040,8,M,other,nonhispanic,inpatient,Medicare,Asthma,19314.63
+E00165,P0027,56,F,black,hispanic,urgentcare,Cigna Health,Anemia,2462.68
+E00166,P0028,61,F,black,hispanic,ambulatory,UnitedHealthcare,Acute bronchitis,2687.03
+E00167,P0009,20,M,white,hispanic,emergency,Medicare,Diabetes,9926.22
+E00168,P0021,43,M,other,nonhispanic,outpatient,UnitedHealthcare,Hypertension,3513.24
+E00169,P0086,89,M,white,nonhispanic,wellness,Cigna Health,Viral sinusitis,1323.75
+E00170,P0042,58,F,white,nonhispanic,wellness,Medicare,Diabetes,1464.66
+E00171,P0102,71,F,black,nonhispanic,ambulatory,Medicare,Malignant neoplasm of breast,3396.4
+E00172,P0106,54,F,white,nonhispanic,inpatient,UnitedHealthcare,Chronic congestive heart failure,18628.41
+E00173,P0035,44,F,white,nonhispanic,wellness,Medicare,Osteoarthritis,1438.34
+E00174,P0071,30,M,asian,hispanic,inpatient,NO_INSURANCE,Asthma,27352.15
+E00175,P0054,89,M,other,hispanic,ambulatory,NO_INSURANCE,Acute bronchitis,5778.66
+E00176,P0040,75,F,white,nonhispanic,ambulatory,Cigna Health,Hypertension,2412.88
+E00177,P0018,49,M,asian,hispanic,outpatient,Aetna,Acute bronchitis,4688.04
+E00178,P0108,41,M,black,nonhispanic,wellness,Aetna,Asthma,1234.39
+E00179,P0010,52,F,white,hispanic,wellness,Cigna Health,Diabetes,1330.95
+E00180,P0054,35,F,white,nonhispanic,inpatient,Medicaid,Diabetes,19050.27
+E00181,P0006,46,F,white,hispanic,inpatient,Aetna,Viral sinusitis,20428.12
+E00182,P0056,28,M,white,hispanic,inpatient,Cigna Health,Viral sinusitis,14442.74
+E00183,P0003,20,M,black,nonhispanic,outpatient,UnitedHealthcare,Hyperlipidemia,3300.46
+E00184,P0060,67,M,white,nonhispanic,inpatient,Medicare,Diabetes,18519.36
+E00185,P0101,19,M,white,nonhispanic,wellness,Aetna,Diabetes,1237.3
+E00186,P0106,38,M,black,nonhispanic,wellness,Medicare,Acute bronchitis,1600.53
+E00187,P0030,62,F,white,nonhispanic,inpatient,NO_INSURANCE,Chronic kidney disease,24235.25
+E00188,P0118,59,F,asian,hispanic,ambulatory,Humana,Chronic kidney disease,2966.41
+E00189,P0115,61,F,black,nonhispanic,wellness,NO_INSURANCE,Hypertension,735.5
+E00190,P0103,43,F,white,nonhispanic,wellness,Cigna Health,Chronic congestive heart failure,1559.79
+E00191,P0052,50,F,white,nonhispanic,wellness,Cigna Health,Anemia,1104.56
+E00192,P0098,37,F,white,nonhispanic,wellness,Aetna,Diabetes,1294.07
+E00193,P0065,44,M,white,hispanic,ambulatory,UnitedHealthcare,Diabetes,1201.89
+E00194,P0053,56,F,asian,nonhispanic,ambulatory,Medicare,Diabetes,2663.01
+E00195,P0027,51,M,asian,nonhispanic,ambulatory,Aetna,Hypertension,781.61
+E00196,P0046,24,F,white,hispanic,wellness,NO_INSURANCE,Hypertension,1765.68
+E00197,P0028,43,M,white,nonhispanic,ambulatory,Cigna Health,Hypertension,2919.3
+E00198,P0028,1,F,white,nonhispanic,emergency,UnitedHealthcare,Hypertension,4277.18
+E00199,P0099,59,F,white,hispanic,outpatient,Cigna Health,Diabetes,4958.67
+E00200,P0099,16,F,asian,nonhispanic,outpatient,Humana,Diabetes,3116.81
+E00201,P0054,44,F,white,nonhispanic,inpatient,Medicaid,Anemia,11712.53
+E00202,P0012,75,M,white,hispanic,inpatient,Medicaid,Hypertension,25155.92
+E00203,P0117,38,F,white,nonhispanic,inpatient,Medicare,Hyperlipidemia,18708.27
+E00204,P0020,86,M,white,nonhispanic,emergency,Humana,Chronic kidney disease,4967.01
+E00205,P0101,65,F,other,nonhispanic,inpatient,NO_INSURANCE,Acute bronchitis,23446.68
+E00206,P0008,34,M,asian,nonhispanic,outpatient,NO_INSURANCE,Hypertension,1942.9
+E00207,P0075,47,F,white,nonhispanic,ambulatory,UnitedHealthcare,Chronic congestive heart failure,3621.6
+E00208,P0112,53,F,white,hispanic,inpatient,Medicare,Hyperlipidemia,19769.67
+E00209,P0022,69,F,asian,nonhispanic,wellness,UnitedHealthcare,Hypertension,914.82
+E00210,P0102,77,F,black,nonhispanic,emergency,Aetna,Acute bronchitis,7861.89
+E00211,P0057,38,F,black,nonhispanic,ambulatory,Aetna,Chronic congestive heart failure,2471.82
+E00212,P0116,60,F,black,nonhispanic,inpatient,NO_INSURANCE,Viral sinusitis,20896.92
+E00213,P0115,74,F,white,nonhispanic,ambulatory,Humana,Viral sinusitis,1684.23
+E00214,P0084,39,M,white,nonhispanic,outpatient,NO_INSURANCE,Hypertension,2441.91
+E00215,P0042,47,M,black,nonhispanic,emergency,Cigna Health,Anemia,3398.03
+E00216,P0091,38,M,white,nonhispanic,emergency,Humana,Asthma,4592.29
+E00217,P0002,24,M,white,hispanic,outpatient,Cigna Health,Diabetes,3824.42
+E00218,P0054,37,M,white,nonhispanic,ambulatory,Medicaid,Hypertension,2478.98
+E00219,P0088,62,M,white,nonhispanic,inpatient,Medicare,Hypertension,32998.16
+E00220,P0046,64,M,white,nonhispanic,inpatient,UnitedHealthcare,Hypertension,20661.42
+E00221,P0021,18,F,white,hispanic,outpatient,Medicaid,Acute bronchitis,1548.57
+E00222,P0050,30,M,white,nonhispanic,ambulatory,NO_INSURANCE,Acute bronchitis,3107.7
+E00223,P0058,64,F,white,nonhispanic,wellness,NO_INSURANCE,Chronic kidney disease,1534.28
+E00224,P0117,42,F,black,nonhispanic,inpatient,Medicaid,Diabetes,24367.1
+E00225,P0056,41,F,white,nonhispanic,ambulatory,Medicaid,Viral sinusitis,1546.96
+E00226,P0082,34,M,black,nonhispanic,outpatient,Aetna,Viral sinusitis,1979.94
+E00227,P0105,52,M,white,nonhispanic,wellness,Aetna,Hypertension,1467.54
+E00228,P0116,32,M,white,nonhispanic,ambulatory,Aetna,Hypertension,2399.26
+E00229,P0054,36,F,white,nonhispanic,wellness,Medicaid,Viral sinusitis,2191.31
+E00230,P0062,27,F,white,nonhispanic,ambulatory,Aetna,Diabetes,2117.67
+E00231,P0087,39,F,white,nonhispanic,urgentcare,Cigna Health,Hypertension,1379.7
+E00232,P0024,53,F,black,nonhispanic,wellness,Cigna Health,Diabetes,716.91
+E00233,P0049,27,M,white,hispanic,ambulatory,UnitedHealthcare,Diabetes,1175.48
+E00234,P0080,34,M,asian,nonhispanic,emergency,Cigna Health,Migraine,4751.16
+E00235,P0046,45,M,other,nonhispanic,ambulatory,Aetna,Hypertension,772.09
+E00236,P0104,18,M,white,nonhispanic,outpatient,Cigna Health,Osteoarthritis,2317.56
+E00237,P0064,89,F,white,nonhispanic,ambulatory,Medicare,Hypertension,2628.58
+E00238,P0117,45,F,white,hispanic,ambulatory,Humana,Hyperlipidemia,2741.33
+E00239,P0058,89,M,black,nonhispanic,outpatient,NO_INSURANCE,Hypertension,3762.88
+E00240,P0051,42,M,white,nonhispanic,inpatient,Cigna Health,Hypertension,9870.99
+E00241,P0083,76,F,black,hispanic,ambulatory,UnitedHealthcare,Viral sinusitis,4183.7
+E00242,P0117,53,F,asian,nonhispanic,urgentcare,Medicare,Hypertension,4119.5
+E00243,P0105,63,M,white,nonhispanic,wellness,Medicare,Chronic congestive heart failure,977.08
+E00244,P0114,52,M,asian,hispanic,urgentcare,NO_INSURANCE,Malignant neoplasm of breast,6795.5
+E00245,P0037,25,M,black,hispanic,ambulatory,Medicaid,Hyperlipidemia,2490.34
+E00246,P0059,52,F,white,hispanic,outpatient,Cigna Health,Asthma,2055.66
+E00247,P0027,68,F,asian,hispanic,inpatient,NO_INSURANCE,Asthma,22718.13
+E00248,P0091,56,F,asian,nonhispanic,emergency,Medicare,Migraine,7150.47
+E00249,P0119,58,M,asian,nonhispanic,ambulatory,NO_INSURANCE,Viral sinusitis,1454.65
+E00250,P0012,53,M,white,hispanic,ambulatory,Medicare,Osteoarthritis,1016.34
+E00251,P0083,39,M,black,nonhispanic,urgentcare,Cigna Health,Asthma,4811.7
+E00252,P0033,66,F,white,nonhispanic,outpatient,Medicare,Hyperlipidemia,4893.71
+E00253,P0026,34,M,white,hispanic,ambulatory,Cigna Health,Malignant neoplasm of breast,3053.46
+E00254,P0096,24,M,black,hispanic,ambulatory,UnitedHealthcare,Acute bronchitis,1361.75
+E00255,P0039,55,F,white,hispanic,ambulatory,Medicaid,Viral sinusitis,2033.73
+E00256,P0071,58,M,black,hispanic,inpatient,Cigna Health,Viral sinusitis,39845.25
+E00257,P0016,89,F,black,nonhispanic,ambulatory,Cigna Health,Acute bronchitis,1881.94
+E00258,P0100,41,M,white,nonhispanic,outpatient,Medicare,Asthma,2831.29
+E00259,P0053,38,F,white,nonhispanic,emergency,NO_INSURANCE,Hypertension,9222.89
+E00260,P0081,51,F,asian,nonhispanic,wellness,Cigna Health,Acute bronchitis,1118.09
+E00261,P0029,48,F,asian,nonhispanic,ambulatory,Medicaid,Malignant neoplasm of breast,6906.69
+E00262,P0063,19,M,white,hispanic,ambulatory,UnitedHealthcare,Diabetes,2468.92
+E00263,P0038,70,F,white,nonhispanic,urgentcare,NO_INSURANCE,Acute bronchitis,3401.59
+E00264,P0068,18,F,white,nonhispanic,ambulatory,Medicaid,Migraine,2529.54
+E00265,P0075,25,F,white,hispanic,ambulatory,Cigna Health,Hyperlipidemia,975.64
+E00266,P0006,52,F,white,nonhispanic,inpatient,Aetna,Viral sinusitis,29179.46
+E00267,P0078,79,M,white,nonhispanic,ambulatory,Cigna Health,Hypertension,3101.88
+E00268,P0075,14,F,black,hispanic,wellness,Medicaid,Viral sinusitis,316.2
+E00269,P0012,68,M,black,nonhispanic,urgentcare,Cigna Health,Chronic kidney disease,6286.44
+E00270,P0051,89,M,white,nonhispanic,inpatient,Aetna,Chronic congestive heart failure,25692.68
+E00271,P0101,33,F,white,nonhispanic,wellness,UnitedHealthcare,Chronic kidney disease,1246.76
+E00272,P0032,63,M,black,nonhispanic,ambulatory,Aetna,Hypertension,1779.26
+E00273,P0005,61,M,asian,nonhispanic,inpatient,Medicaid,Diabetes,17107.09
+E00274,P0044,24,M,white,nonhispanic,outpatient,NO_INSURANCE,Hyperlipidemia,1060.9
+E00275,P0028,29,F,black,nonhispanic,ambulatory,Medicare,Chronic kidney disease,2048.61
+E00276,P0013,47,M,asian,nonhispanic,ambulatory,Humana,Anemia,2005.01
+E00277,P0080,58,F,white,hispanic,emergency,Cigna Health,Diabetes,6142.45
+E00278,P0044,36,F,black,nonhispanic,ambulatory,Cigna Health,Diabetes,1200.49
+E00279,P0049,50,M,black,nonhispanic,outpatient,Aetna,Migraine,1820.76
+E00280,P0077,46,F,white,nonhispanic,outpatient,Medicaid,Asthma,1505.39
+E00281,P0070,48,M,white,hispanic,emergency,Aetna,Hyperlipidemia,3546.34
+E00282,P0076,33,F,white,hispanic,emergency,NO_INSURANCE,Chronic kidney disease,4589.95
+E00283,P0078,24,M,white,nonhispanic,ambulatory,Humana,Asthma,1544.15
+E00284,P0063,71,F,white,nonhispanic,ambulatory,Aetna,Hypertension,4834.34
+E00285,P0119,56,M,white,nonhispanic,inpatient,NO_INSURANCE,Diabetes,24313.44
+E00286,P0085,67,M,white,hispanic,outpatient,Medicare,Osteoarthritis,2049.83
+E00287,P0011,89,M,asian,hispanic,ambulatory,Cigna Health,Diabetes,1003.13
+E00288,P0079,9,F,other,nonhispanic,urgentcare,NO_INSURANCE,Hyperlipidemia,3466.92
+E00289,P0042,70,F,black,nonhispanic,emergency,Medicaid,Asthma,4925.56
+E00290,P0053,31,M,other,hispanic,ambulatory,Humana,Acute bronchitis,3748.88
+E00291,P0099,67,F,black,nonhispanic,wellness,Aetna,Diabetes,1250.05
+E00292,P0070,58,M,white,nonhispanic,ambulatory,Cigna Health,Diabetes,2864.61
+E00293,P0019,22,M,white,nonhispanic,wellness,Medicare,Asthma,537.99
+E00294,P0012,70,M,white,nonhispanic,ambulatory,Medicare,Diabetes,4738.64
+E00295,P0016,45,M,white,nonhispanic,ambulatory,NO_INSURANCE,Acute bronchitis,969.35
+E00296,P0097,89,F,asian,hispanic,ambulatory,NO_INSURANCE,Migraine,2128.1
+E00297,P0050,46,M,white,nonhispanic,ambulatory,Cigna Health,Anemia,3585.64
+E00298,P0120,72,M,white,nonhispanic,ambulatory,Medicare,Diabetes,2563.96
+E00299,P0043,36,M,black,nonhispanic,ambulatory,Medicaid,Chronic kidney disease,5440.9
+E00300,P0016,46,M,white,nonhispanic,ambulatory,Cigna Health,Chronic kidney disease,5755.23
+E00301,P0074,37,F,white,nonhispanic,ambulatory,Cigna Health,Viral sinusitis,2117.64
+E00302,P0012,25,F,white,nonhispanic,inpatient,Cigna Health,Osteoarthritis,14728.08
+E00303,P0060,43,M,white,nonhispanic,wellness,Medicare,Acute bronchitis,558.22
+E00304,P0071,79,F,white,nonhispanic,inpatient,Medicaid,Malignant neoplasm of breast,54451.7
+E00305,P0103,48,M,white,nonhispanic,outpatient,Medicaid,Malignant neoplasm of breast,3460.8
+E00306,P0059,59,F,white,nonhispanic,wellness,Medicare,Asthma,1860.21
+E00307,P0035,51,F,black,nonhispanic,urgentcare,Medicaid,Asthma,4858.54
+E00308,P0024,12,F,white,hispanic,ambulatory,Medicaid,Acute bronchitis,2863.15
+E00309,P0023,39,M,other,hispanic,outpatient,Medicaid,Migraine,1373.9
+E00310,P0106,49,F,asian,nonhispanic,emergency,UnitedHealthcare,Acute bronchitis,4940.89
+E00311,P0093,28,F,white,hispanic,ambulatory,Medicare,Hypertension,828.96
+E00312,P0030,51,M,asian,nonhispanic,ambulatory,UnitedHealthcare,Anemia,1701.42
+E00313,P0014,20,M,asian,nonhispanic,ambulatory,Humana,Acute bronchitis,1433.65
+E00314,P0023,34,M,black,nonhispanic,ambulatory,Medicaid,Hypertension,1068.73
+E00315,P0022,14,F,black,nonhispanic,ambulatory,Aetna,Hypertension,1379.41
+E00316,P0062,40,M,white,nonhispanic,ambulatory,Humana,Asthma,4937.03
+E00317,P0014,55,M,white,nonhispanic,outpatient,Medicare,Asthma,1942.11
+E00318,P0034,61,M,white,nonhispanic,inpatient,NO_INSURANCE,Osteoarthritis,28676.79
+E00319,P0004,48,M,other,nonhispanic,urgentcare,Aetna,Viral sinusitis,3254.01
+E00320,P0113,43,F,white,nonhispanic,ambulatory,Medicaid,Hypertension,2415.4
+E00321,P0023,89,F,asian,nonhispanic,wellness,UnitedHealthcare,Hypertension,642.2
+E00322,P0101,51,F,white,hispanic,outpatient,Medicaid,Chronic congestive heart failure,2000.82
+E00323,P0119,53,F,white,nonhispanic,ambulatory,Medicare,Hypertension,1600.56
+E00324,P0007,73,F,white,nonhispanic,emergency,Medicaid,Diabetes,6543.72
+E00325,P0097,59,F,white,nonhispanic,ambulatory,UnitedHealthcare,Diabetes,3266.36
+E00326,P0081,75,M,asian,nonhispanic,wellness,UnitedHealthcare,Viral sinusitis,592.29
+E00327,P0028,52,F,white,nonhispanic,outpatient,Medicaid,Diabetes,1567.73
+E00328,P0101,47,M,white,nonhispanic,outpatient,Medicare,Asthma,2793.68
+E00329,P0036,65,F,asian,nonhispanic,ambulatory,Aetna,Diabetes,5787.95
+E00330,P0016,68,F,white,nonhispanic,ambulatory,Medicare,Viral sinusitis,1653.62
+E00331,P0034,30,F,white,nonhispanic,urgentcare,Aetna,Chronic kidney disease,4989.57
+E00332,P0027,73,M,black,nonhispanic,ambulatory,UnitedHealthcare,Asthma,2074.04
+E00333,P0033,26,M,other,hispanic,outpatient,Medicare,Hyperlipidemia,3279.18
+E00334,P0027,70,M,white,hispanic,ambulatory,Medicaid,Hypertension,4813.46
+E00335,P0061,65,M,black,nonhispanic,inpatient,Humana,Hyperlipidemia,23687.16
+E00336,P0109,46,M,white,nonhispanic,outpatient,NO_INSURANCE,Hyperlipidemia,1465.91
+E00337,P0104,66,F,asian,nonhispanic,outpatient,UnitedHealthcare,Asthma,6400.19
+E00338,P0064,46,F,white,nonhispanic,outpatient,NO_INSURANCE,Diabetes,1839.89
+E00339,P0073,53,M,asian,nonhispanic,wellness,Cigna Health,Acute bronchitis,891.29
+E00340,P0023,29,F,asian,nonhispanic,urgentcare,Medicaid,Chronic kidney disease,3704.06
+E00341,P0107,33,M,other,nonhispanic,ambulatory,Medicare,Asthma,2234.84
+E00342,P0001,69,M,black,hispanic,emergency,Medicaid,Chronic kidney disease,23539.97
+E00343,P0068,22,M,asian,hispanic,ambulatory,Aetna,Viral sinusitis,3834.93
+E00344,P0105,62,M,white,hispanic,ambulatory,Cigna Health,Acute bronchitis,1074.05
+E00345,P0085,82,F,black,nonhispanic,inpatient,NO_INSURANCE,Chronic kidney disease,19558.35
+E00346,P0102,29,M,white,nonhispanic,ambulatory,Medicare,Hypertension,952.46
+E00347,P0120,64,F,black,nonhispanic,ambulatory,Medicare,Asthma,5039.83
+E00348,P0107,1,F,white,nonhispanic,ambulatory,Cigna Health,Hypertension,1401.71
+E00349,P0100,51,M,black,nonhispanic,wellness,Aetna,Viral sinusitis,1022.71
+E00350,P0022,72,F,black,nonhispanic,wellness,UnitedHealthcare,Hyperlipidemia,1464.38
+E00351,P0090,22,F,white,hispanic,ambulatory,UnitedHealthcare,Asthma,2291.7
+E00352,P0117,68,M,white,nonhispanic,ambulatory,Cigna Health,Malignant neoplasm of breast,5962.22
+E00353,P0060,88,M,white,nonhispanic,outpatient,UnitedHealthcare,Diabetes,3977.85
+E00354,P0026,32,F,white,nonhispanic,ambulatory,Medicaid,Chronic congestive heart failure,6808.39
+E00355,P0049,30,F,white,nonhispanic,ambulatory,UnitedHealthcare,Anemia,1498.74
+E00356,P0108,89,M,white,nonhispanic,emergency,Medicare,Hypertension,3470.9
+E00357,P0039,27,F,white,hispanic,ambulatory,Aetna,Chronic congestive heart failure,2016.85
+E00358,P0032,51,M,asian,nonhispanic,urgentcare,NO_INSURANCE,Asthma,2928.96
+E00359,P0112,57,M,white,nonhispanic,inpatient,NO_INSURANCE,Chronic kidney disease,18796.4
+E00360,P0019,28,F,white,nonhispanic,ambulatory,Humana,Hypertension,1545.21
