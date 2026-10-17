@@ -306,9 +306,13 @@ def vi_gender(value: str) -> str:
 def vi_payer(value: str) -> str:
     return DISPLAY_MAPS["payer"].get(value, value)
 
-
 def vi_condition(value: str) -> str:
-    return DISPLAY_MAPS["condition"].get(value, value)
+    vi = DISPLAY_MAPS["condition"].get(value)
+
+    if vi:
+        return f"{vi} | {value}"
+
+    return value
 
 
 # -----------------------------
@@ -322,7 +326,18 @@ def load_cached_data(base_dir: str):
 df, data_mode, source_label = load_cached_data(str(BASE_DIR))
 api_base_url = os.getenv("API_BASE_URL", "http://localhost:5005")
 api_online, api_health = check_api_health(api_base_url)
-model_name = "Linear Regression" if isinstance(api_health, dict) and api_health.get("best_model") == "linear_regression" else ""
+# model_name = "Linear Regression" if isinstance(api_health, dict) and api_health.get("best_model") == "linear_regression" else ""
+if isinstance(api_health, dict):
+    best_model = api_health.get("best_model", "")
+
+    if best_model == "random_forest_log1p_deep":
+        model_name = "Random Forest (log1p)"
+    elif best_model == "linear_regression":
+        model_name = "Linear Regression"
+    else:
+        model_name = best_model
+else:
+    model_name = ""
 
 # Header
 stamp = datetime.now().strftime("%d/%m/%Y %H:%M")
@@ -548,35 +563,212 @@ with bottom_right:
 # -----------------------------
 st.markdown('<div class="section-card"><div class="section-title">Dự đoán chi phí điều trị</div><div class="section-subtitle">Nhập thông tin lượt khám để ước tính tổng chi phí claim.</div></div>', unsafe_allow_html=True)
 
-form_col, result_col = st.columns([2.2, 1.0], gap="medium")
+form_col, result_col = st.columns([2.6, 1.0], gap="medium")
+
 with form_col:
     with st.form("prediction_form", clear_on_submit=False):
+
+        # =========================
+        # NHÓM 1: Thông tin cơ bản
+        # =========================
+        st.markdown("#### Thông tin lượt khám")
+
         r1c1, r1c2, r1c3 = st.columns(3, gap="small")
+
         with r1c1:
-            pred_age = st.number_input("Tuổi", min_value=0, max_value=120, value=45, step=1)
+            pred_age = st.number_input(
+                "Tuổi",
+                min_value=0,
+                max_value=120,
+                value=45,
+                step=1
+            )
+
         with r1c2:
-            gender_values = sorted(df["gender"].dropna().astype(str).unique())
-            pred_gender = st.selectbox("Giới tính", gender_values, format_func=vi_gender, key="pred_gender")
+            gender_values = sorted(
+                df["gender"].dropna().astype(str).unique()
+            )
+
+            pred_gender = st.selectbox(
+                "Giới tính",
+                gender_values,
+                format_func=vi_gender,
+                key="pred_gender"
+            )
+
         with r1c3:
-            race_values = sorted(df["race"].dropna().astype(str).unique())
-            pred_race = st.selectbox("Chủng tộc", race_values, format_func=lambda x: DISPLAY_MAPS.get("race", {}).get(x, x), key="pred_race")
+            race_values = sorted(
+                df["race"].dropna().astype(str).unique()
+            )
+
+            pred_race = st.selectbox(
+                "Chủng tộc",
+                race_values,
+                format_func=lambda x:
+                    DISPLAY_MAPS.get("race", {}).get(x, x),
+                key="pred_race"
+            )
+
 
         r2c1, r2c2, r2c3 = st.columns(3, gap="small")
+
         with r2c1:
-            ethnicity_values = sorted(df["ethnicity"].dropna().astype(str).unique())
-            pred_ethnicity = st.selectbox("Nhóm dân tộc", ethnicity_values, format_func=lambda x: DISPLAY_MAPS.get("ethnicity", {}).get(x, x), key="pred_eth")
+            ethnicity_values = sorted(
+                df["ethnicity"].dropna().astype(str).unique()
+            )
+
+            pred_ethnicity = st.selectbox(
+                "Nhóm dân tộc",
+                ethnicity_values,
+                format_func=lambda x:
+                    DISPLAY_MAPS.get("ethnicity", {}).get(x, x),
+                key="pred_eth"
+            )
+
         with r2c2:
-            encounter_values = [x for x in sorted(df["encounter_class"].dropna().unique())]
-            pred_encounter = st.selectbox("Loại lượt khám", encounter_values, format_func=vi_encounter, key="pred_enc")
+            encounter_values = sorted(
+                df["encounter_class"].dropna().astype(str).unique()
+            )
+
+            pred_encounter = st.selectbox(
+                "Loại lượt khám",
+                encounter_values,
+                format_func=vi_encounter,
+                key="pred_enc"
+            )
+
         with r2c3:
-            payer_values_pred = [x for x in sorted(df["payer"].dropna().unique())]
-            pred_payer = st.selectbox("Bảo hiểm / đơn vị chi trả", payer_values_pred, format_func=vi_payer, key="pred_payer")
+            payer_values_pred = sorted(
+                df["payer"].dropna().astype(str).unique()
+            )
 
-        condition_values = sorted(df["condition"].dropna().astype(str).unique())
-        pred_condition = st.selectbox("Tình trạng bệnh", condition_values, format_func=vi_condition, key="pred_condition")
+            pred_payer = st.selectbox(
+                "Bảo hiểm / đơn vị chi trả",
+                payer_values_pred,
+                format_func=vi_payer,
+                key="pred_payer"
+            )
 
-        submitted = st.form_submit_button("Dự đoán chi phí", use_container_width=True)
 
+        condition_values = sorted(
+            df["condition"]
+            .dropna()
+            .astype(str)
+            .unique()
+            .tolist()
+        )
+
+        pred_condition = st.selectbox(
+            "Tình trạng bệnh",
+            condition_values,
+            format_func=vi_condition,
+            key="pred_condition"
+        )
+
+
+        # =========================
+        # NHÓM 2: Hoạt động y tế
+        # =========================
+        st.markdown("#### Hoạt động y tế")
+
+        r3c1, r3c2, r3c3 = st.columns(3, gap="small")
+
+        with r3c1:
+            pred_condition_count = st.number_input(
+                "Số tình trạng bệnh",
+                min_value=0,
+                value=1,
+                step=1
+            )
+
+        with r3c2:
+            pred_procedure_count = st.number_input(
+                "Số thủ thuật",
+                min_value=0,
+                value=0,
+                step=1
+            )
+
+        with r3c3:
+            pred_distinct_procedure_count = st.number_input(
+                "Số loại thủ thuật khác nhau",
+                min_value=0,
+                value=0,
+                step=1
+            )
+
+
+        r4c1, r4c2, r4c3 = st.columns(3, gap="small")
+
+        with r4c1:
+            pred_medication_count = st.number_input(
+                "Số thuốc",
+                min_value=0,
+                value=0,
+                step=1
+            )
+
+        with r4c2:
+            pred_distinct_medication_count = st.number_input(
+                "Số loại thuốc khác nhau",
+                min_value=0,
+                value=0,
+                step=1
+            )
+
+        with r4c3:
+            pred_observation_count = st.number_input(
+                "Số quan sát / xét nghiệm",
+                min_value=0,
+                value=0,
+                step=1
+            )
+
+
+        pred_encounter_duration_hours = st.number_input(
+            "Thời lượng lượt khám (giờ)",
+            min_value=0.0,
+            value=1.0,
+            step=0.5
+        )
+
+
+        # =========================
+        # NHÓM 3: Lịch sử khám
+        # =========================
+        st.markdown("#### Lịch sử khám")
+
+        r5c1, r5c2, r5c3 = st.columns(3, gap="small")
+
+        with r5c1:
+            pred_prior_encounter_count = st.number_input(
+                "Số lượt khám trước đó",
+                min_value=0,
+                value=0,
+                step=1
+            )
+
+        with r5c2:
+            pred_prior_inpatient_count = st.number_input(
+                "Số lần nội trú trước đó",
+                min_value=0,
+                value=0,
+                step=1
+            )
+
+        with r5c3:
+            pred_prior_emergency_count = st.number_input(
+                "Số lần cấp cứu trước đó",
+                min_value=0,
+                value=0,
+                step=1
+            )
+
+
+        submitted = st.form_submit_button(
+            "Dự đoán chi phí",
+            use_container_width=True
+        )
 payload = {
     "age": int(pred_age),
     "gender": pred_gender,
@@ -585,6 +777,36 @@ payload = {
     "encounter_class": pred_encounter,
     "payer": pred_payer,
     "condition": pred_condition,
+
+    "condition_count": int(pred_condition_count),
+
+    "procedure_count": int(pred_procedure_count),
+    "distinct_procedure_count": int(
+        pred_distinct_procedure_count
+    ),
+
+    "medication_count": int(pred_medication_count),
+    "distinct_medication_count": int(
+        pred_distinct_medication_count
+    ),
+
+    "observation_count": int(pred_observation_count),
+
+    "encounter_duration_hours": float(
+        pred_encounter_duration_hours
+    ),
+
+    "prior_encounter_count": int(
+        pred_prior_encounter_count
+    ),
+
+    "prior_inpatient_count": int(
+        pred_prior_inpatient_count
+    ),
+
+    "prior_emergency_count": int(
+        pred_prior_emergency_count
+    ),
 }
 
 if "predicted_cost_value" not in st.session_state:
@@ -592,20 +814,61 @@ if "predicted_cost_value" not in st.session_state:
     st.session_state.prediction_mode = ""
 
 if submitted:
-    if api_online:
+
+    validation_error = None
+
+    if pred_distinct_procedure_count > pred_procedure_count:
+        validation_error = (
+            "Số loại thủ thuật khác nhau không thể lớn hơn "
+            "tổng số thủ thuật."
+        )
+
+    elif pred_distinct_medication_count > pred_medication_count:
+        validation_error = (
+            "Số loại thuốc khác nhau không thể lớn hơn "
+            "tổng số thuốc."
+        )
+
+    elif pred_prior_inpatient_count > pred_prior_encounter_count:
+        validation_error = (
+            "Số lần nội trú trước đó không thể lớn hơn "
+            "tổng số lượt khám trước đó."
+        )
+
+    elif pred_prior_emergency_count > pred_prior_encounter_count:
+        validation_error = (
+            "Số lần cấp cứu trước đó không thể lớn hơn "
+            "tổng số lượt khám trước đó."
+        )
+
+    if validation_error:
+        st.session_state.predicted_cost_value = None
+        st.session_state.prediction_mode = ""
+        st.error(validation_error)
+
+    elif api_online:
         result, err = predict_cost(api_base_url, payload)
+
         if err is None:
-            st.session_state.predicted_cost_value = float(result["predicted_total_claim_cost"])
-            st.session_state.prediction_mode = "Linear Regression"
+            st.session_state.predicted_cost_value = float(
+                result["predicted_total_claim_cost"]
+            )
+
+            st.session_state.prediction_mode = (
+                model_name or "Random Forest (log1p)"
+            )
+
         else:
             st.session_state.predicted_cost_value = None
             st.session_state.prediction_mode = ""
             st.error(f"Không thể dự đoán: {err}")
+
     else:
         st.session_state.predicted_cost_value = None
         st.session_state.prediction_mode = ""
-        st.error("API/model chưa sẵn sàng. Không thể dự đoán.")
-
+        st.error(
+            "API/model chưa sẵn sàng. Không thể dự đoán."
+        )
 with result_col:
     value = st.session_state.predicted_cost_value
     if value is None:
